@@ -3,20 +3,24 @@ import Child from "./Home";
  
 class Stuff extends Component {
   render() {
+	var  user={
+		  name: "babu",
+		  hobbies :["sleep"]
+	  };
     return (
       <div>
         <h2>STUFF</h2>
 		<div>
-        <Child />
+        <Child name={"rajan"} age={25} user={user}/>
+		<Child />
          </div>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
+        <p>Redux is a tool for managing both data-state and UI-state in JavaScript applications.</p>
         <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
+          <li>list 1</li>
+          <li>list 2</li>
+          <li>list 3</li>
+          <li>list 4</li>
+          <li>list 5</li>
         </ol>
       </div>
     );
